@@ -4,7 +4,7 @@ import fitz
 from PIL import Image, ImageTk
 
 window = Tk()
-window.iconbitmap(r'iconfortest.ico')
+window.iconbitmap(r'images/iconfortest.ico')
 window.state('zoomed')
 
 
@@ -12,7 +12,7 @@ class MainMenu:
     def __init__(self):
         self.canvas = tk.Canvas(window, width=1920, height=1080)
         self.canvas.place(x=0, y=0)
-        img = PhotoImage(file="zadnifon.png")
+        img = PhotoImage(file="images/zadnifon.png")
         self.canvas.create_image(0, 0, image=img, anchor='nw')
         self.main_menu()
         window.mainloop()
